@@ -1,2 +1,2 @@
 # InterviewPrepration
-Practicing inverview question in Java DSA
+Practicing inverview question in Java
