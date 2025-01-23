@@ -20,6 +20,6 @@ public class ReverseArray {
             nums[right] = temp;
             left++;
             right--;
-        }//
+        }
     }
 }
