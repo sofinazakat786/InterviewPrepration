@@ -1,6 +1,7 @@
 {
     "java.format.settings.url": ".vscode/java-formatter.xml",
     "cSpell.words": [
-        "reversearray"
+        "reversearray",
+        "validparenthes"
     ]
 }
