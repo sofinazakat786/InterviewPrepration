@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Solution",
             "request": "launch",
+            "mainClass": "complexities.timecomplexities.Solution",
+            "projectName": "InterviewPrep_49270ee5"
+        },
+        {
+            "type": "java",
+            "name": "Solution",
+            "request": "launch",
             "mainClass": "stack.validparenthes.Solution",
             "projectName": "InterviewPrep_49270ee5"
         },
