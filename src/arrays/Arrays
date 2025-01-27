@@ -1,0 +1,31 @@
+1. It allows storing multiple values in a single variable
+2. An array is a collection of elements of the same type stored in a Contiguous memory location
+
+   eg; Array namely marks is storing marks of 10 students
+       type variable_name [] = {}
+       int marks[] = {50, 34, 67, 85, 67, 96, 46, 96, 64, 56}
+
+       marks ->  Array name
+       int   ->  Array will be storing integer values
+       []    ->  Symbol of array
+       {}    ->  values of the integers
+
+
+3. Characteristics of an Array
+      i) Fixed size  ( in above case size of array is 10)
+     ii) Size -> no of elements an array can store
+    iii) Index-based
+     iv) starting index = 0, endIndex = size -1 eg 9  marks[10] will be out of bound
+      V) Homogenous elements -> same type of elements
+     vi) Contiguous memory location -> all elements will be stored next to each other
+
+4. Types of array
+    i) 1D Array:
+       Data stored in a single line
+       Declare and Initilise values:          int marks[] = { 10, 20, 30, 40}
+
+
+
+   ii) 2D Array
+  iii) Multi-dimentional array
+
