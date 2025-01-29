@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ReverseArray",
+            "request": "launch",
+            "mainClass": "arrays.arraybasics.ReverseArray",
+            "projectName": "InterviewPrep_49270ee5"
+        },
+        {
+            "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "arrays.arraybasics.Test",
+            "projectName": "InterviewPrep_49270ee5"
+        },
+        {
+            "type": "java",
+            "name": "TestingGitIgnore",
+            "request": "launch",
+            "mainClass": "arrays.arraybasics.TestingGitIgnore",
+            "projectName": "InterviewPrep_49270ee5"
+        },
+        {
+            "type": "java",
             "name": "Solution",
             "request": "launch",
             "mainClass": "complexities.timecomplexities.Solution",
