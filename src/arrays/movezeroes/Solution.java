@@ -3,10 +3,9 @@ package arrays.movezeroes;
 class Solution {
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
         int[] nums = {0, 1, 0, 3, 12};
 
-        solution.moveZeroes(nums);
+        moveZeroes(nums);
 
         System.out.print("Array after moving zeroes:");
         for (int num : nums) {
@@ -14,7 +13,7 @@ class Solution {
         }
     }
 
-    public void moveZeroes(int[] nums) {
+    public static void moveZeroes(int[] nums) {
         int nonZeroIndex = 0; // Pointer for the next non-zero element
 
         // Move all non-zero elements to the front
