@@ -2,7 +2,7 @@ package arrays.arrayADT;
 
 public class Main {
     public static void main(String[] args) {
-        ArrayADT array = new ArrayADT(5);
+        ArrayADT array = new ArrayADTImpl(5);
         array.getSize();
         array.display();
         array.insert(10);
