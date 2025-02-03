@@ -18,7 +18,6 @@ public class SecLargestElement {
                 secLargest = arr[i];
             }
         }
-
         return secLargest;
     }
 }
