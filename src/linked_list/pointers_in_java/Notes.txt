@@ -1,0 +1,24 @@
+//Pointers in java?
+//Java does not support pointers.
+However, it supports references.
+A reference is a variable that refers to an object.
+A reference has a type, and can be used to refer to any object of that type or a subtype of that type.
+References are similar to pointers in C++, but they are safer and more abstract.
+//What is the difference between a reference and a pointer?
+//A reference is a variable that refers to an object.
+//A pointer is a variable that stores the memory address of an object.
+
+Class and object in java?
+//A class is a blueprint for creating objects.
+//An object is an instance of a class.
+//A class defines the properties and behavior of objects.
+example:
+class Car {
+  String color;
+  int speed;
+  void drive() {
+    System.out.println("Driving at " + speed + " km/h.");
+  }
+}
+Car myCar = new Car();
+myCar.color = "Red";
