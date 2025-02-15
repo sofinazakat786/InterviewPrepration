@@ -1,4 +1,4 @@
-package linked_list.impl;
+package linked_list.linkedlistApp;
 
 public class Node {
     public int data;

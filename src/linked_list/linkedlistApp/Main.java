@@ -1,7 +1,5 @@
-package linked_list.impl;
+package linked_list.linkedlistApp;
 
-import java.sql.SQLOutput;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
