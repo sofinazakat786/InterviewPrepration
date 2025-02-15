@@ -1,50 +1,132 @@
 package linked_list.impl;
 
+import java.sql.SQLOutput;
 import java.util.Arrays;
-import java.util.LinkedList;
+import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws InterruptedException {
-//        Node node1 = new Node(34);
-//        Node node2 = new Node(45);
-//        Node node3 = new Node(56);
-//        node1.next = node2;
-//        node2.next = node3;
-//
-//        System.out.println("Node 1 data: "+node1.data);
-////        System.out.println("Node 1 next: "+node1.next);  // This will print the address of the next node
-//        System.out.println("Node 2 data or Node 1 next data : "+node1.next.data);
-//        System.out.println("Node 3 data or Node 2 next data : "+node2.next.data);
-//
-//        System.out.println("Node 2 next: "+node2.next);
-        Node node1 = new Node(34);
-        Node node2 = node1;
 
-        System.out.println(node1.data);
-        System.out.println(node2.data);
+    public static void printMenu() {
+        System.out.println("*************MENU******************");
+        System.out.println("ENTER 1 TO INSERT");
+        System.out.println("ENTER 2 TO DELETE");
+        System.out.println("ENTER 3 TO SEARCH");
+        System.out.println("Enter 4 to DISPLAY");
+        System.out.println("ENTER 5 TO EXIT");
+        System.out.println("ENTER YOUR CHOICE");
+        System.out.println("**********************************");
+    }
 
-        node1.data = 45;
-        System.out.println(node1.data);
-        System.out.println(node2.data);
+    public static void printInsertMenu() {
+        System.out.println("Press 1 to insert from head");
+        System.out.println("Press 2 to insert from tail");
+        System.out.println("Press 3 to insert at specific position");
+    }
 
-//        Why node2 data is also changed when we change node1 data?
-//        Because node2 is pointing to the same memory location as node1. So, when we change the data of node1, it will also change the data of node2.
-        LinkedList<String> ll = new LinkedList<>();
-        ll.addFirst("first");
-        ll.addLast("last1");
-        ll.add(0, "add index");
-        ll.addFirst("first2");
-        ll.addLast("last2");
-        System.out.println(ll.contains("add"));
-        ll.addAll(Arrays.asList("Carrot", "Spinach"));
-        System.out.println(ll);
-        ll.add("add");
-        linked_list.impl.LinkedList manualLL = new linked_list.impl.LinkedList();
-        manualLL.insertAtStart(5);
-        manualLL.insertAtEnd(8);
-        manualLL.insertAtPosition(25, 2);
-        manualLL.insertAtStart(10);
-        manualLL.display();
+    public static void printDeleteMenu() {
+        System.out.println("Press 1 to delete from head");
+        System.out.println("Press 2 to delete from tail");
+        System.out.println("Press 3 to delete at specific position");
+    }
+
+    public static void main(String[] args) {
+        System.out.println("***Welcome to Linklist App****");
+        LinkedList linklist = new LinkedList();
+        Scanner scanner = new Scanner(System.in);
+        while (true) {
+            try {
+                printMenu();
+                // Read the choice
+                int choice = scanner.nextInt();
+                if (choice == 1) {
+                    //insert op
+                    insertToLinkedList(linklist);
+
+                } else if (choice == 2) {
+                    //delete op
+                    deleteFromLinkedList(linklist);
+
+                } else if (choice == 3) {
+                    // search op
+                    System.out.println("Enter the data you want to search ??");
+                    int data = scanner.nextInt();
+                    boolean result = linklist.searchData(data);
+                    if (result) {
+                        System.out.println("Yes! " + data + "  is present in the list");
+                    } else {
+                        System.out.println(data + " is not present in the list");
+                    }
+
+                } else if (choice == 4) {
+                    linklist.display();
+                    System.out.println();
+                } else if (choice == 5) {
+                    // exit
+                    System.out.println("Thank you for using App");
+                    break;
+
+                } else {
+                    System.out.println("Invalid choice!!");
+                }
+
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+            }
+        }
+
+    }
+
+    private static void insertToLinkedList(LinkedList linklist) {
+        printInsertMenu();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the insert choice ?");
+        int choice = sc.nextInt();
+        if (choice == 1) {
+            System.out.println("Enter the data you want to insert at head?");
+            int data = sc.nextInt();
+            linklist.insertAtStart(data);
+            System.out.println(data + " inserted at head !");
+
+        } else if (choice == 2) {
+            System.out.println("Enter the data you want to insert at tail");
+            int data = sc.nextInt();
+            linklist.insertAtEnd(data);
+            System.out.println(data + " inserted at tail !");
+
+        } else if (choice == 3) {
+            System.out.println("Enter the data you want to insert ?");
+            int data = sc.nextInt();
+            System.out.println("Enter the position you want to inesert ?");
+            int position = sc.nextInt();
+            linklist.insertAtPosition(data, position);
+            System.out.println(data + " inserted at " + position + "th position");
+        } else {
+            System.out.println("Invalid insert choice !!");
+        }
+    }
+
+
+    private static void deleteFromLinkedList(LinkedList linklist) {
+        printDeleteMenu();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the delete choice");
+        int deleteChoice = sc.nextInt();
+        if (deleteChoice == 1) {
+            linklist.deleteFromBegining();
+            System.out.println("Deleted !!");
+        } else if (deleteChoice == 2) {
+            linklist.deleteFromEnd();
+            System.out.println("Deleted !!");
+
+        } else if (deleteChoice == 3) {
+            System.out.println("Enter the delete position ");
+            int position = sc.nextInt();
+            linklist.deleteFromPosition(position);
+            System.out.println("Deleted !!");
+
+        } else {
+            System.out.println("Invalid Delete choice !!");
+        }
     }
 }
 

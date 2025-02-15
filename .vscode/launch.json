@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "linked_list.impl.Main",
+            "projectName": "InterviewPrep_49270ee5"
+        },
+        {
+            "type": "java",
             "name": "ReverseArray",
             "request": "launch",
             "mainClass": "arrays.arraybasics.ReverseArray",
