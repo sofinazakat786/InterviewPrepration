@@ -1,0 +1,17 @@
+Differences between Abstract Classes & Interfaces
+Interface:
+    1) Interface contains only abstract methods
+    2) Access Specifiers for method in interface must be public
+    3) Variables defined must be public, static or final
+    4) To implement an interface, we use implements keyword
+Abstract Class:
+    1) Abstract class can contain abstract methods, non-abstract methods
+    2) Except private we can have any access modifiers for methods in abstract class
+    3) Except private variables we can have any access specifiers
+    4) To implement an abstract class, we use extends keyword
+
+
+ Multiples Inheritance:
+ Java does not support multiple inheritance for classes to avoid complexity and ambiguity (the "diamond problem").
+ However, a class can implement multiple interfaces, allowing it to inherit method signatures from multiple sources.
+ This way, Java achieves a form of multiple inheritance without the complications.
