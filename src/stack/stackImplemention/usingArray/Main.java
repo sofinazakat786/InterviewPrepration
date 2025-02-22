@@ -1,7 +1,5 @@
 package stack.stackImplemention.usingArray;
 
-import stack.stackImplemention.usingArray.StackByArray;
-
 public class Main {
     public static void main(String[] args) {
         System.out.println("Stack example");
@@ -15,11 +13,11 @@ public class Main {
         stack.displayElement();
         System.out.println("POP: " + stack.pop());
         stack.displayElement();
-        System.out.println("Peek : "+stack.peek());
+        System.out.println("Peek : " + stack.peek());
         stack.displayElement();
 
 
-        for(int i = 0;i< 3;i++){
+        for (int i = 0; i < 3; i++) {
             stack.pop();
             stack.displayElement();
         }

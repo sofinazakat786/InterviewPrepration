@@ -13,7 +13,7 @@ public class ParentClass {
         System.out.println("Gear code is implemented");
     }
 
-    public void audioSystem(){
+    public void audioSystem() {
         System.out.println("Audio system is implemented");
     }
 

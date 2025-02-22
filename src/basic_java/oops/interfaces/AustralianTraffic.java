@@ -3,7 +3,7 @@ package basic_java.oops.interfaces;
 public class AustralianTraffic implements TrafficInterface {
 
 
-    public void blueIndicator(){
+    public void blueIndicator() {
         System.out.println("Blue means taking right");
     }
 

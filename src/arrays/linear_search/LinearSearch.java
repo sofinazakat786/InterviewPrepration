@@ -12,7 +12,7 @@ public class LinearSearch {
         lastOccurrenceSearch(arr, 4);
         maxElement(arr);
         int minElement = minElement(arr);
-        System.out.println("Min element of Array is: "+minElement);
+        System.out.println("Min element of Array is: " + minElement);
 
     }
 
@@ -26,25 +26,27 @@ public class LinearSearch {
             }
         }
         if (index == -1) {
-            System.out.println("Element "+target+" not found");
+            System.out.println("Element " + target + " not found");
         } else {
-            System.out.println("Element "+target+" found at index: " + index);
+            System.out.println("Element " + target + " found at index: " + index);
         }
     }
-    public static void lastOccurrenceSearch(int arr[], int target){
+
+    public static void lastOccurrenceSearch(int arr[], int target) {
         int index = -1;
-        for (int i = arr.length- 1; i>= 0; i--){
-            if (arr[i] == target){
+        for (int i = arr.length - 1; i >= 0; i--) {
+            if (arr[i] == target) {
                 index = i;
                 break;
             }
         }
-        if (index == -1){
-            System.out.println("Element "+target+" not found");
+        if (index == -1) {
+            System.out.println("Element " + target + " not found");
         } else {
-            System.out.println("Last Occurence of element "+target+" found at index: " + index);
+            System.out.println("Last Occurence of element " + target + " found at index: " + index);
         }
     }
+
     // what else we can play with linear search?
     // 1. Search for multiple occurrences of the element?
     public static void multipleOccurrenceSearch(int arr[], int target) {
@@ -52,26 +54,28 @@ public class LinearSearch {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == target) {
                 index = i;
-                System.out.println("Element "+target+" found at index: " + index);
+                System.out.println("Element " + target + " found at index: " + index);
             }
         }
         if (index == -1) {
-            System.out.println("Element "+target+" not found");
+            System.out.println("Element " + target + " not found");
         }
     }
-    public static void maxElement(int arr[]){
+
+    public static void maxElement(int arr[]) {
         int max = arr[0];
-        for (int i = 0; i< arr.length; i++){
-            if (arr[i] > max){
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > max) {
                 max = arr[i];
             }
         }
-        System.out.println("Max element of Array is: "+max);
+        System.out.println("Max element of Array is: " + max);
     }
-    public static int minElement(int[] arr){
+
+    public static int minElement(int[] arr) {
         int min = arr[0];
-        for (int i = 0; i< arr.length; i++){
-            if (arr[i] < min){
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < min) {
                 min = arr[i];
             }
         }

@@ -1,7 +1,5 @@
 package design_patterns;
 
-import java.sql.ShardingKey;
-
 interface Shape {
     void draw();
 }
@@ -30,8 +28,7 @@ class ShapeFactory {
             return new Circle();
         } else if (type.equalsIgnoreCase("Rectangle")) { // If type is Rectangle, return a new Rect object
             return new Rectangle();
-        }
-        else{
+        } else {
             throw new IllegalArgumentException("Shape is undefined");
         }
 //        return null;

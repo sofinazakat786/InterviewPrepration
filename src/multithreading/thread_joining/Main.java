@@ -7,12 +7,12 @@ public class Main {
         PlayerThread[] threads = new PlayerThread[4];
 
         for (int i = 0; i < threads.length; i++) {
-            threads[i] = new PlayerThread(i+1);
+            threads[i] = new PlayerThread(i + 1);
             threads[i].start();
         }
 
         // TODO: Task One - Wait for all player threads to finish
-        for( PlayerThread thread : threads){
+        for (PlayerThread thread : threads) {
             thread.join();
         }
 

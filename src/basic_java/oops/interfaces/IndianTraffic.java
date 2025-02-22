@@ -2,7 +2,7 @@ package basic_java.oops.interfaces;
 
 public class IndianTraffic implements TrafficInterface {
 
-    public void voiletIndicator(){
+    public void voiletIndicator() {
         System.out.println("indian voilet");
     }
 

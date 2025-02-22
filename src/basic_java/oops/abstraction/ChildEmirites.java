@@ -1,6 +1,6 @@
 package basic_java.oops.abstraction;
 
-public class ChildEmirites extends ParentAircraft{
+public class ChildEmirites extends ParentAircraft {
 
     public static void main(String[] args) {
         ChildEmirites c = new ChildEmirites();
