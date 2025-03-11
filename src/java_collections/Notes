@@ -1,0 +1,19 @@
+List: A list is an ordered collection(sequence). Lists may contain duplicate elements.
+    Below classes implement List Interface:
+    1. ArrayList
+    2. LinkedList
+    3. Vector
+
+Set: A Set is a collection that can't contain duplicate elements.
+    However it makes no guarantees concerning the order of iteration.
+    Below classes implement Set Interface:
+    1. HashSet
+    2. LinkedHashSet
+    3. TreeSet
+
+Map: A Map is an object that maps keys to values. A map can't contain duplicate keys.
+    Below classes implement Map Interface:
+    1. HashMap
+    2. TreeMap
+    3. LinkedHashMap
+
