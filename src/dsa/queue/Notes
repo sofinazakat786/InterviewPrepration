@@ -1,0 +1,18 @@
+Queue: A queue is a linear data structure that follows the FIFO(First In First Out) principle.
+ The elements are added at the rear end and removed from the front end.
+
+Key Operations:
+1. Enqueue : Adding an element to the end of the queue.
+2. Dequeue : Removing an element from the front of the queue.
+3. Peek/Front: Getting the front element without removing it.
+4. isEmpty: Checking the queue is empty.
+5. isFull: Checking the queue is full
+
+Types of Queue:
+1. Simple Queue: A basic queue follows FIFO
+                 Limitation: once full no more elements can be added even if some are removed
+                 useCase: Customer service ticketing system.
+2. Circular Queue: A queue where the rare pointer wraps around to the front when  the end of the array is reached, making better use of storage.
+                 Key diff: Unlike a simple, it efficiently utilizes the array by reusing freed spaces:
+                 UseCase : CPU scheduling, memory management
+
