@@ -1,4 +1,4 @@
-package basic_java.practice_questions;
+package common_interview_questions.patterns;
 
 public class Pyramids {
 
