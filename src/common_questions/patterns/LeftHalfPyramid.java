@@ -1,4 +1,4 @@
-package common_interview_questions.patterns;
+package common_questions.patterns;
 
 public class LeftHalfPyramid {
     public static void main(String[] args) {

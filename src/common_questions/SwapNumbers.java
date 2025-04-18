@@ -1,4 +1,4 @@
-package common_interview_questions;
+package common_questions;
 
 public class SwapNumbers {
     public static void main(String[] args) {

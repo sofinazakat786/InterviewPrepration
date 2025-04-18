@@ -1,4 +1,4 @@
-package common_interview_questions.patterns;
+package common_questions.patterns;
 
 import java.util.Arrays;
 import java.util.Collections;
