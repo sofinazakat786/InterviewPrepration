@@ -1,6 +1,6 @@
 package common_questions.patterns;
 
-public class IncreasingPyramid {
+public class PyramidIncreasing {
     public static void main(String[] args) {
         /*  Number Increasing Pyramid:
             1

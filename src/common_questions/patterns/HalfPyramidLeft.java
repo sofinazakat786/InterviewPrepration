@@ -1,6 +1,6 @@
 package common_questions.patterns;
 
-public class LeftHalfPyramid {
+public class HalfPyramidLeft {
     public static void main(String[] args) {
         /*
     Reverse Right Half Pyramid:

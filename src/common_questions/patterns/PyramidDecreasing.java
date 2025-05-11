@@ -1,6 +1,6 @@
 package common_questions.patterns;
 
-public class DecreasingPyramid {
+public class PyramidDecreasing {
     public static void main(String[] args) {
         /*     Number Increasing Reverse Pyramid:
             1 2 3 4
